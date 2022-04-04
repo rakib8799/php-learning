@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta
+                        name="viewport"
+                        content="width=device-width, initial-scale=1.0"
+                />
+                <title>PHP Tutorial</title>
+        </head>
+        <body>
+                <table>
+                        <form
+                                action="script.php"
+                                method="post"
+                                target="_blank"
+                                enctype="multipart/form-data"
+                        >
+                                <tr>
+                                        <td>
+                                                <label for="id"
+                                                        >Roll Number
+                                                </label>
+                                        </td>
+                                        <td>
+                                                <input
+                                                        type="text"
+                                                        name="rollNumber"
+                                                        id="id"
+                                                        placeholder="Enter Your Roll Number"
+                                                        required
+                                                />
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label for="name">Name </label>
+                                        </td>
+                                        <td>
+                                                <input
+                                                        type="text"
+                                                        name="fullName"
+                                                        id="name"
+                                                        placeholder="Enter Your Name"
+                                                        required
+                                                />
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label
+                                                        for="fathername"
+                                                        name="fathername"
+                                                        >Father's Name
+                                                </label>
+                                        </td>
+                                        <td>
+                                                <input
+                                                        type="text"
+                                                        name="fatherName"
+                                                        id="fathername"
+                                                        placeholder="Enter Your Father's Name"
+                                                        required
+                                                />
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label for="mothername"
+                                                        >Mother's Name
+                                                </label>
+                                        </td>
+                                        <td>
+                                                <input
+                                                        type="text"
+                                                        name="motherName"
+                                                        id="mothername"
+                                                        placeholder="Enter Your Mother's Name'"
+                                                        required
+                                                />
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label for="email"
+                                                        >Email Address
+                                                </label>
+                                        </td>
+                                        <td>
+                                                <input
+                                                        type="email"
+                                                        name="emailAddress"
+                                                        id="email"
+                                                        placeholder="Enter Your Email Address"
+                                                        required
+                                                />
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label>Gender </label>
+                                        </td>
+                                        <td>
+                                                <input
+                                                        type="radio"
+                                                        id="male"
+                                                        name="genderValue"
+                                                        value="Male"
+                                                        checked
+                                                />
+                                                <label for="male">Male</label
+                                                ><br />
+                                                <input
+                                                        type="radio"
+                                                        id="female"
+                                                        name="genderValue"
+                                                        value="Female"
+                                                />
+                                                <label for="female"
+                                                        >Female</label
+                                                ><br />
+                                                <input
+                                                        type="radio"
+                                                        id="others"
+                                                        name="genderValue"
+                                                        value="Others"
+                                                />
+                                                <label for="others"
+                                                        >Others</label
+                                                ><br />
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label for="department"
+                                                        >Department:</label
+                                                >
+                                        </td>
+                                        <td>
+                                                <select
+                                                        name="departmentName"
+                                                        id="department"
+                                                >
+                                                        <option value="bangla">
+                                                                Bangla Language
+                                                                and Literature
+                                                        </option>
+                                                        <option value="english">
+                                                                English Language
+                                                                and Literature
+                                                        </option>
+                                                        <option value="music">
+                                                                Music
+                                                        </option>
+                                                        <option value="theatre">
+                                                                Theatre and
+                                                                Performance
+                                                                Studies
+                                                        </option>
+                                                        <option value="film">
+                                                                Film and Media
+                                                        </option>
+                                                        <option
+                                                                value="philosophy"
+                                                        >
+                                                                Philosophy
+                                                        </option>
+                                                        <option
+                                                                value="fine arts"
+                                                        >
+                                                                Fine Arts
+                                                        </option>
+                                                        <option value="cse">
+                                                                Computer Science
+                                                                and Engineering
+                                                        </option>
+                                                        <option value="eee">
+                                                                Electrical and
+                                                                Electronic
+                                                                Engineering
+                                                        </option>
+                                                        <option value="ese">
+                                                                Environmental
+                                                                Science and
+                                                                Engineering
+                                                        </option>
+                                                        <option value="stat">
+                                                                Statistics
+                                                        </option>
+                                                        <option
+                                                                value="economics"
+                                                        >
+                                                                Economics
+                                                        </option>
+                                                        <option value="public">
+                                                                Public
+                                                                Administration
+                                                                and Governance
+                                                                Studies
+                                                        </option>
+                                                        <option
+                                                                value="folklore"
+                                                        >
+                                                                Folklore
+                                                        </option>
+                                                        <option
+                                                                value="anthropology"
+                                                        >
+                                                                Anthropology
+                                                        </option>
+                                                        <option
+                                                                value="population"
+                                                        >
+                                                                Population
+                                                                Science
+                                                        </option>
+                                                        <option value="local">
+                                                                Local Government
+                                                                and Urban
+                                                                Development
+                                                        </option>
+                                                        <option
+                                                                value="sociology"
+                                                        >
+                                                                Sociology
+                                                        </option>
+                                                        <option value="law">
+                                                                Law and Justice
+                                                        </option>
+                                                        <option
+                                                                value="accounting"
+                                                        >
+                                                                Accounting and
+                                                                Information
+                                                                Systems
+                                                        </option>
+                                                        <option value="finance">
+                                                                Finance and
+                                                                Banking
+                                                        </option>
+                                                        <option value="human">
+                                                                Human Resource
+                                                                Management
+                                                        </option>
+                                                        <option
+                                                                value="management"
+                                                        >
+                                                                Management
+                                                        </option>
+                                                </select>
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label for="session"
+                                                        >Session</label
+                                                >
+                                        </td>
+                                        <td>
+                                                <select
+                                                        name="sessionYear"
+                                                        id="session"
+                                                >
+                                                        <option value="2016-17">
+                                                                2016-17
+                                                        </option>
+                                                        <option value="2017-18">
+                                                                2017-18
+                                                        </option>
+                                                        <option value="2018-19">
+                                                                2018-19
+                                                        </option>
+                                                        <option value="2019-20">
+                                                                2019-20
+                                                        </option>
+                                                        <option value="2020-21">
+                                                                2020-21
+                                                        </option>
+                                                </select>
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label>Languages </label>
+                                        </td>
+                                        <td>
+                                                <input
+                                                        type="checkbox"
+                                                        id="language1"
+                                                        name="language[]"
+                                                        value="Bangla"
+                                                        checked
+                                                />
+                                                <label for="language1">
+                                                        bangla</label
+                                                ><br />
+                                                <input
+                                                        type="checkbox"
+                                                        id="language2"
+                                                        name="language[]"
+                                                        value="English"
+                                                />
+                                                <label for="language2">
+                                                        english</label
+                                                ><br />
+                                                <input
+                                                        type="checkbox"
+                                                        id="language3"
+                                                        name="language[]"
+                                                        value="Arabic"
+                                                />
+                                                <label for="language3">
+                                                        arabic</label
+                                                >
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label for="phone"></label>Phone
+                                                Number
+                                        </td>
+                                        <td>
+                                                <input
+                                                        type="tel"
+                                                        name="phoneNumber"
+                                                        id="phone"
+                                                        placeholder="Enter Your Mobile Number"
+                                                        required
+                                                />
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label for="address"
+                                                        >Contact Address
+                                                </label>
+                                        </td>
+                                        <td>
+                                                <input
+                                                        type="text"
+                                                        name="contactAddress"
+                                                        id="address"
+                                                        placeholder="Enter Your Contact Address"
+                                                        required
+                                                />
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label for="date">Date </label>
+                                        </td>
+                                        <td>
+                                                <input
+                                                        type="date"
+                                                        name="currentDate"
+                                                        id="date"
+                                                        placeholder="Enter The Current Date"
+                                                        required
+                                                />
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                                <label for="image"
+                                                        >Upload Picture</label
+                                                >
+                                        </td>
+                                        <td>
+                                                <input
+                                                        type="file"
+                                                        name="image"
+                                                        id="image"
+                                                        required
+                                                />
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td></td>
+                                        <td>
+                                                <input
+                                                        type="submit"
+                                                        name="submit"
+                                                        id="submit"
+                                                        value="Submit"
+                                                />
+                                        </td>
+                                </tr>
+                        </form>
+                </table>
+        </body>
+</html>
