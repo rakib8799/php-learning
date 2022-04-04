@@ -4,9 +4,24 @@
     $emailAddress = $_GET["emailAddress"];
 ?>
 
-<p>First Name is: <?php echo $firstName; ?></p>
-<p>Last Name is: <?php echo $lastName; ?></p>
-<p>Email Address is: <?php echo $emailAddress; ?></p>
+<table border="1">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+    </tr>
+    <tr>
+        <td>
+            <?php echo $firstName; ?>
+        </td>
+        <td>
+            <?php echo $lastName; ?>
+        </td>
+        <td>
+            <?php echo $emailAddress; ?>
+        </td>    
+    </tr>
+</table>
 
 <?php
      include_once("./db.php");

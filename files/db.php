@@ -61,7 +61,8 @@
               "  - email: " . $row["email"].
               "<br>";
             }
-          } else {
+          }
+          else {
             echo "0 results";
           }
     }
@@ -70,5 +71,5 @@
     }
 
     mysqli_close($conn);
-
+?>
     
